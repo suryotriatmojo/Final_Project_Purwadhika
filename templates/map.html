@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e9e058e56f0c4ab186f1bd7a00c22894 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e9e058e56f0c4ab186f1bd7a00c22894" ></div>
+        
+</body>
+<script>    
+    
+            var map_e9e058e56f0c4ab186f1bd7a00c22894 = L.map(
+                "map_e9e058e56f0c4ab186f1bd7a00c22894",
+                {
+                    center: [22.153324, -101.0195459],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2f60bf39d46948c0bda0ffb0adc4b923 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e9e058e56f0c4ab186f1bd7a00c22894);
+        
+    
+            var marker_6e03f47669364502b5fa2b29e95bd6cc = L.marker(
+                [22.153324, -101.0195459],
+                {}
+            ).addTo(map_e9e058e56f0c4ab186f1bd7a00c22894);
+        
+    
+        var popup_c11254519e884aa9b69cdd557c3c9e16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0d358ba82b34d7aa0ef637669735e4d = $(`<div id="html_c0d358ba82b34d7aa0ef637669735e4d" style="width: 100.0%; height: 100.0%;">La Estrella De Dimas</div>`)[0];
+            popup_c11254519e884aa9b69cdd557c3c9e16.setContent(html_c0d358ba82b34d7aa0ef637669735e4d);
+        
+
+        marker_6e03f47669364502b5fa2b29e95bd6cc.bindPopup(popup_c11254519e884aa9b69cdd557c3c9e16)
+        ;
+
+        
+    
+    
+            marker_6e03f47669364502b5fa2b29e95bd6cc.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_053dd80335a9405187545efab1227268 = L.marker(
+                [23.726819, -99.1265059],
+                {}
+            ).addTo(map_e9e058e56f0c4ab186f1bd7a00c22894);
+        
+    
+        var popup_8f9e7dfc3aca4b6abd0c5f0e4ccf14ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf7f4df65a3640368924a455f1acdf52 = $(`<div id="html_bf7f4df65a3640368924a455f1acdf52" style="width: 100.0%; height: 100.0%;">Cafe Ambar</div>`)[0];
+            popup_8f9e7dfc3aca4b6abd0c5f0e4ccf14ee.setContent(html_bf7f4df65a3640368924a455f1acdf52);
+        
+
+        marker_053dd80335a9405187545efab1227268.bindPopup(popup_8f9e7dfc3aca4b6abd0c5f0e4ccf14ee)
+        ;
+
+        
+    
+    
+            marker_053dd80335a9405187545efab1227268.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5967b331ce214619ade91341d3a95c49 = L.marker(
+                [22.154687, -100.996617],
+                {}
+            ).addTo(map_e9e058e56f0c4ab186f1bd7a00c22894);
+        
+    
+        var popup_58e8ebba2f594a0898d9c8c3b179fa2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abb7c606887c491b8e3bc9ffa2f6bb71 = $(`<div id="html_abb7c606887c491b8e3bc9ffa2f6bb71" style="width: 100.0%; height: 100.0%;">Restaurante El Chivero S.A. De C.V.</div>`)[0];
+            popup_58e8ebba2f594a0898d9c8c3b179fa2a.setContent(html_abb7c606887c491b8e3bc9ffa2f6bb71);
+        
+
+        marker_5967b331ce214619ade91341d3a95c49.bindPopup(popup_58e8ebba2f594a0898d9c8c3b179fa2a)
+        ;
+
+        
+    
+    
+            marker_5967b331ce214619ade91341d3a95c49.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9de991f457a14a75821045c282065bd3 = L.marker(
+                [22.153703, -100.979033],
+                {}
+            ).addTo(map_e9e058e56f0c4ab186f1bd7a00c22894);
+        
+    
+        var popup_e17f1f22a7524616b3dcc8bfbd7dc38e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b7b83a8443d4cffa02055ce3a80f96a = $(`<div id="html_0b7b83a8443d4cffa02055ce3a80f96a" style="width: 100.0%; height: 100.0%;">Restaurante El Cielo Potosino</div>`)[0];
+            popup_e17f1f22a7524616b3dcc8bfbd7dc38e.setContent(html_0b7b83a8443d4cffa02055ce3a80f96a);
+        
+
+        marker_9de991f457a14a75821045c282065bd3.bindPopup(popup_e17f1f22a7524616b3dcc8bfbd7dc38e)
+        ;
+
+        
+    
+    
+            marker_9de991f457a14a75821045c282065bd3.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25a38cff76a34ca6897761630a9735ac = L.marker(
+                [22.1353639, -100.9349477],
+                {}
+            ).addTo(map_e9e058e56f0c4ab186f1bd7a00c22894);
+        
+    
+        var popup_a68eaef9a12e4a17970e911eeff083d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f243cfdde89440b7b97ab7bd6d99ebe2 = $(`<div id="html_f243cfdde89440b7b97ab7bd6d99ebe2" style="width: 100.0%; height: 100.0%;">Sirloin Stockade</div>`)[0];
+            popup_a68eaef9a12e4a17970e911eeff083d3.setContent(html_f243cfdde89440b7b97ab7bd6d99ebe2);
+        
+
+        marker_25a38cff76a34ca6897761630a9735ac.bindPopup(popup_a68eaef9a12e4a17970e911eeff083d3)
+        ;
+
+        
+    
+    
+            marker_25a38cff76a34ca6897761630a9735ac.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
