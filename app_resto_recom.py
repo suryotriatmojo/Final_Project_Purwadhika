@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask, render_template, request, redirect, url_for
+import json
 import joblib
 import numpy as np
 import pandas as pd
@@ -9,8 +10,42 @@ import folium
 
 app = Flask(__name__)
 
+with open('database.json') as dataku:
+    data = json.load(dataku)
+
 @app.route('/', methods = ['GET', 'POST'])
-def home():
+def welcome():
+    if request.method == 'POST':
+        nam_l = request.form['nama_login']
+        pwd_l = request.form['pass_login']
+        
+        for a in range(len(data)):
+            if nam_l == data[a]['nama'] and pwd_l == data[a]['pass']:
+                return redirect(url_for('main'))
+            elif a == len(data) - 1:
+                return render_template('error_login.html', nama = nam_l)
+            else:
+                continue
+    else:
+        return render_template('welcome.html')
+
+@app.route('/signup', methods = ['GET', 'POST'])
+def signup():
+    if request.method == 'POST':
+        nam_s = request.form['nama_signup']
+        pwd_s = request.form['pass_signup']
+        data.append({'nama': nam_s, 'pass': pwd_s})
+        y = json.dumps(data)
+
+        json_data = open('database.json', 'w')
+        json_data.write(y)
+        return redirect(url_for('main'))
+    else:
+        return render_template('signup.html')
+
+
+@app.route('/main', methods = ['GET', 'POST'])
+def main():
     if request.method == 'POST':
         city = int(request.form['city'])
         alcohol = int(request.form['alcohol'])
@@ -220,19 +255,11 @@ def home():
         
         # return redirect(url_for('show_prediction', prediksi = prediksi))
     else:        
-        return render_template('home.html')
+        return render_template('main.html')
 
 @app.route('/map')
 def show_map():
     return render_template('map.html')
-
-# @app.route('/result/<int:prediksi>')
-# def show_prediction(prediksi):
-#     print(prediksi)
-#     if prediksi == 1:
-#         return render_template('selamat.html')
-#     else:
-#         return render_template('mati.html')
 
 if __name__ == '__main__':
     resto_profile = pd.read_csv('datasets/resto_profile.csv')
