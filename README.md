@@ -19,24 +19,24 @@ In brief there are 6 html pages which will show you this restaurant recommendati
 
     This is the first landing page. In this page you can log in (if you have already registered before) or sign up (if want make a new account or not registered yet before)
 
-    ![Home](images/home.png)
+    ![Home](images/home_.png)
 
 2. Error Log In Page
 
     If you Log In with unregistered username or wrong password then it gives you Error Page
 
-    ![Error Log In](images/error.png)
+    ![Error Log In](images/error_.png)
 
 3. Sign Up Page
     From Home Page if you click Sign Up button, then you can create a new account, please input your username and password and it will be stored to json file -> database.json
 
-    ![Sign Up](images/signup.png)
+    ![Sign Up](images/signup_.png)
 
 4. Main Page
 
     At the Main page you are supposed to give 7 input criterias what kind of restaurant that you're looking for:
 
-    ![Restaurant](images/main.png)
+    ![Restaurant](images/main_.png)
 
     Click "Find your top 5 restaurant" button, then the machine will give you top 5 restaurant recommendations that 80% up fits with you.
 
@@ -46,7 +46,7 @@ In brief there are 6 html pages which will show you this restaurant recommendati
 
     In this page will summarize what are your inputs and the results of top 5 restaurant recommendations
 
-    ![Result](images/result.png)
+    ![Result](images/result_.png)
 
     Then you can find the restaurant locations on maps by click "Show Location" button, or just go back to Main page and Home page
 
@@ -54,7 +54,7 @@ In brief there are 6 html pages which will show you this restaurant recommendati
 
     In this page will give you the coordinate of Top 5 restaurant recommendations on maps. I use [Folium](https://python-visualization.github.io/folium/) packages to show this map
 
-    ![map](images/map.png)
+    ![map](images/map_.png)
 
 Hope you enjoy it.. Cheers!
 
