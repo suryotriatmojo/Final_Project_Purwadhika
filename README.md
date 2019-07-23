@@ -28,6 +28,7 @@ In brief there are 6 html pages which will show you this restaurant recommendati
     ![Error Log In](images/error_.png)
 
 3. Sign Up Page
+
     From Home Page if you click Sign Up button, then you can create a new account, please input your username and password and it will be stored to json file -> database.json
 
     ![Sign Up](images/signup_.png)
@@ -38,9 +39,7 @@ In brief there are 6 html pages which will show you this restaurant recommendati
 
     ![Restaurant](images/main_.png)
 
-    Click "Find your top 5 restaurant" button, then the machine will give you top 5 restaurant recommendations that 80% up fits with you.
-
-    Or you can go back to Home Page
+    Click "Find your top 5 restaurant" button, then the machine will give you top 5 restaurant recommendations that 80% up fits with you. Or you can go back to Home Page
 
 5. Result Page
 
